@@ -1667,7 +1667,7 @@ h3.my-profession
     <!----====JS Files====-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     
-    <script src="">
+    <script>
         /*--------------------------typing animation-------------------*/
 var typed = new Typed(".typing",{
     strings:["","Web Designer","Web Developer","Graphic Designer","YouTuber"],
@@ -1696,14 +1696,14 @@ document.addEventListener('DOMContentLoaded', function() {
     showContent('home');
 });
 
-    </script>
+</script>
 
 
-    <script src="">
+<script>
         /*-----toggle style switcher-----   */
-const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
-styleSwitcherToggle.addEventListener("click", () => {
-    document.querySelector(".style-switcher").classList.toggle("open");
+    const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
+    styleSwitcherToggle.addEventListener("click", () => {
+        document.querySelector(".style-switcher").classList.toggle("open");
 })
 
 // hide style - switcher on scroll
@@ -1715,20 +1715,20 @@ window.addEventListener("scroll", () => {
 })
 
 /*   ----------theme colors----------   */
-const alternateStyles = document.querySelectorAll(".alternate-style");
-function setActiveStyle(color)
-{
-    alternateStyles.forEach((style) => {
-        if(color === style.getAttribute("title"))
-        {
-            style.removeAttribute("disabled");
-        }
-        else
-        {
-            style.setAttribute("disabled", "true");
-        }
-    })
-}
+// const alternateStyles = document.querySelectorAll(".alternate-style");
+// function setActiveStyle(color)
+// {
+//     alternateStyles.forEach((style) => {
+//         if(color === style.getAttribute("title"))
+//         {
+//             style.removeAttribute("disabled");
+//         }
+//         else
+//         {
+//             style.setAttribute("disabled", "true");
+//         }
+//     })
+// }
 
 /*   ----------theme light and dark mode----------   */
 const dayNight = document.querySelector(".day-night");
@@ -1748,6 +1748,8 @@ window.addEventListener("load", () => {
     }
 })
     </script>
+
+    <script src="/switcher.js"></script>
     
 </body>
 </html>
