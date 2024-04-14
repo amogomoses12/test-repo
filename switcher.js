@@ -1,3 +1,4 @@
+
 /*   ----------theme colors----------   */
 const alternateStyles = document.querySelectorAll(".alternate-style");
 function setActiveStyle(color)
@@ -13,3 +14,7 @@ function setActiveStyle(color)
         }
     })
 }
+
+
+
+
